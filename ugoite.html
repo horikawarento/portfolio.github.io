@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <title>portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" />
+    <link rel="stylesheet" href="main.css" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px; /* 各 .main-content の下に余白を追加 */
+        }
+
+        .main-content img {
+            width: 25%;
+            height: auto;
+        }
+
+        .main-content p {
+            width: 48%;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        a.section-link {
+            color: rgba(2, 51, 31, 0.863);; /* リンクの色を変更 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a.section-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 id="about">私について</h2>
+    <div class="main-content">
+        <img src="horikao.jpg" alt="アイコンの画像" />
+
+        <p>
+            ・堀川蓮斗<br>
+            ・大阪公立大学工業高等専門学校メカトロニクスコース4年<br>
+            ・将来的には電気関係の仕事に就きたい<br>
+            ・gmail:　r20129@osaka-pct.ac.jp
+        </p>
+    </div>
+   
+    <h2 id="software">授業で扱ったソフト/技術</h2>
+    <ul>
+        <strong>kicad　　　　　　　<a href="#makecir">回路設計</a></strong><br>
+        <strong>creo 　　　　　　　<a href="#makemec">機械設計</a></strong><br>
+        arduino<br>
+        phython<br>
+    </ul>
+
+    <h3 id="makecir"></h3>
+
+    <h2 id="projects">製作物</h2>
+    <div class="main-content">
+        <img src="kairo1.png" alt="アイコンの画像" style="width: 50%; height: auto;" />
+        <p>
+            cadの授業で作成したモーターとサーボを駆動するarduino uno用シールドです。kicadを用いて作成しました。全ての部品は
+            <a href="https://akizukidenshi.com/catalog/">秋月電子</a>にて揃えることができるように設計しました。
+            また小型化にもこだわりました。
+        </p>
+    </div>
+
+    <div class="main-content">
+        <img src="kairo2.png" alt="アイコンの画像" style="width: 40%; height: auto;" />
+        <p>
+            三年生にて行った文化祭で製作した回路です。ラジコンを作る、というテーマで5人チームで製作に取り掛かりました。
+            この回路はマイコンの取り付け、電源、モーター駆動回路、サーボ駆動回路、電源電圧を監視するモニターを一つにまとめたものです。急な部品変更にも対応できるようにするためユニバーサル基板が使用されています。
+        </p>
+    </div>
+
+    <div class="main-content">
+        <img src="kairo3.png" alt="アイコンの画像" style="width: 40%; height: auto;" />
+        <p>
+            　三年生での実習にて行ったPLCです。ここではロッドの伸縮を制御するプログラムを書きました。
+            インターンシップ先でも一週間ほどPLCを触らせていただき、センサーから読み取られた情報をもとにモニターに現在の状況を示す、ということが出来るようになりました。
+        </p>
+    </div>
+    <! --ここでいったん終わり　次は基礎研究の話をしたい　動画を探しておくこと。-->
+    <h3 id="makemec"></h3>
+    <div class="main-content">
+        <img src="hand1.png" alt="アイコンの画像" style="width: 40%; height: auto;" />
+        <p>
+            　四年生での基礎研究という科目にて作成したハンドです。基礎研究では5人1チームでお寿司を作り手からお客様の
+            もとまで、どのように効率的に運ぶか？というテーマのもとなるべくコンパクトかつ、操作性が良くなるように3Dcadのcreoを使用し製作しました。
+            
+        </p>
+    </div>
+
+    <div class="main-content">
+        <img src="hand2.png" alt="アイコンの画像" style="width: 40%; height: auto;" />
+        <p>
+            　このハンドは主に回路部、機構部の二つに分けることが出来ます。レーザーカッターを使用し作成された部分は
+            回路ボックスとなっています。マイコン、モバイルバッテリー、サーボ、電池ボックスを格納できるように
+            設計しました。ハンドの操作性向上のため、写真のように磁石を用いた扉の開閉ギミックを搭載し内部の配線を容易にしました。
+            
+        </p>
+    </div>
+
+    <div class="main-content">
+        <video controls width="50%">
+            <source src="実験動画.mp4" type="video/mp4">
+        </video>
+        <p>
+            　実際の動作動画になります。
+            
+        </p>
+    </div>
+
+    <p style="text-align: center;">
+        <a class="section-link" href="#about">私について</a> | 
+        <a class="section-link" href="#software">授業で扱ったソフト/技術</a> |
+        <a class="section-link" href="#projects">製作物</a> |
+     
+    </p>
+
+</body>
+
+</html>
